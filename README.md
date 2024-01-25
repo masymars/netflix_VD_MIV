@@ -1,5 +1,7 @@
-# Scrollytelling demo using scrollama.js and d3.js
-This repository contains a demo setup for *scrollytelling*. It uses scrollama.js and d3.js (v3.5). The setup assumes you have a screen that is at least 1100 pixels wide and it has only been tested on a modern Firefox browser.
+# Scrollytelling Demo: Netflix Production by Year
+
+This repository showcases a scrollytelling demo tailored for exploring Netflix production data by year. The setup utilizes scrollama.js and d3.js (v3.5). Please ensure your screen is at least 1100 pixels wide, as the demo has been optimized and tested on a modern Firefox browser.
+
 
 ## Background
 
