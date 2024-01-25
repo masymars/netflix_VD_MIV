@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset="utf-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <title>Scrollytelling with Scrollama and D3 (demo)</title>
+      <meta name="description" content="An example of how to combine scrollama.js with d3.js for scrollytelling" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet"> 
+      <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div id="language">
+        <h1>Netflix Storytelling Visualization</h1>
+    </div>
+    <main>
+        <section class="generic" id="intro">
+            <h1>
+                Exploring Netflix TV Shows and Series
+            </h1>
+            <p>
+                Welcome to an interactive scrollytelling experience that explores Netflix's vast collection of TV shows and series. 
+                This demo utilizes scrollama.js and d3.js to guide you through interesting insights and highlights from the data.
+                Ensure your screen is at least 1100 pixels wide for the best experience. The demo has been optimized for modern browsers, 
+                with a focus on Firefox. Technical notes are provided below.
+            </p>
+            <p>
+                Get ready to immerse yourself in the world of Netflix entertainment!
+            </p>
+            <p class="seperator"></p>
+    
+            <div id="netflixData"></div>
+        </section>
+
+      <section id="scrolly">
+          
+        <figure>
+          <div class="viz" id="data_viz"></div>
+        </figure>
+
+        <article>
+            
+            <div class="step" data-step="1">
+                <h2>Netflix Film Production</h2>
+                <p style="font-size: 0.75em;">
+                    Netflix invested heavily in film production until 2019, when the pandemic led to a decline. The global crisis significantly impacted the industry, prompting a shift in Netflix's strategy.
+                </p>
+            </div>
+            <div class="step" data-step="2">
+                <h2>Movies VS TV shows</h2>
+                <p style="font-size: 0.75em;">
+                    Notably, Netflix's investment in content favored movies over TV shows. The cost-effectiveness of producing movies became a key factor, leading the streaming giant to allocate more resources to film production.
+                    <span class="label movies">Movies</span>, 
+                    <span class="label tvshows">TV shows</span>.
+                </p>
+            </div>
+            
+            <div class="step" data-step="2">
+                <h2>Production by Country</h2>
+                <p style="font-size: 0.75em;">
+                    Netflix's film production is spread across different countries, with a significant focus on the USA, India, and the UK. This global distribution is influenced by the dominance of Hollywood in the United States and Bollywood in India. The rich cinematic traditions of these regions contribute to Netflix's diverse and vibrant content portfolio.
+                    <span class="label red">USA</span>, 
+                    <span class="label green">India</span>,
+                    <span class="label grey">UK</span>.
+                </p>
+            </div>
+            
+            <div class="step" data-step="3">
+                <h2>Genre of Shows</h2>
+                <p>
+                    In the realm of genres, foreign films and TV shows take the lead in Netflix's diverse content library, owing to the vast number produced globally. This international approach adds a rich cultural tapestry to the platform's offerings. Notably, within the United States, comedy and drama emerge as the dominant genres, with a prolific output in the creation of movies and shows.
+                </p>
+            </div>
+            
+            
+            <div class="step" data-step="4">
+                <h2>Rating Pie Chart</h2>
+                <p>
+                    When clicking on any country, a pop-up window appears, displaying detailed information about the states or regions within that country.
+                </p>
+            </div>
+            
+            <div class="step" data-step="5">
+                <h2>Interactive Map</h2>
+                <p>
+                    Explore the distribution of show ratings with our interactive Rating Pie Chart. The chart provides an overview of the number of shows rated in total.
+                </p>
+            </div>
+            
+        
+        </article>
+          
+      </section>
+
+      
+    </main>
+
+
+    <script src="src/d3.5.9.1.min.js"></script>
+    <script src="src/intersection-observer.js"></script>
+    <script src="src/stickyfill.min.js"></script>
+    <script src="src/scrollama.min.js"></script>
+    <script src="src/topojson.v1.min.js"></script>
+    <script src="d3-animations.js"></script>
+    <script src="scrollama-settings.js"></script>
+  </body>
+</html>
